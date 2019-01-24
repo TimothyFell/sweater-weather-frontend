@@ -2,16 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Self Directed FD Starter</title>
+    <title>Sweater Weather</title>
+    <link rel="stylesheet" type="text/css" href="/lib/styles.css" />
   </head>
   <body>
     <header>
-      <a href=""><h1>SweaterWeather</h1></a>
-      <a href="#">Login</a>
-      <a href="#">Register</a>
+      <div class="container">
+        <div class="spacer">
+          <a href="#" id="home"><h1><span class="cyan">Sweater</span>Weather</h1></a>
+          <nav>
+            <a href="#" id="login">Login</a>
+            <a href="#" id="register">Register</a>
+          </nav>
+        </div>
+      </div>
     </header>
     <div id="main">
-
+      <div class="container">
+        <div class="search">
+          <h2>Search for Weather!</h2>
+          <input class='input-field' type='text' placeholder='Ex: New York, NY' id='location'>
+          <input id='search' class='btn' type='submit' value='Search'>
+        </div>
+      </div>
     </div>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
     </script>
