@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 #main h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .search {
@@ -98,5 +98,103 @@ nav a:hover {
   background-color:#007f7f;
   border-color:#007f7f;
   cursor: pointer;
-  
+}
+
+.current-weather {
+  margin: 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.current, .details {
+  border: 2px solid #222;
+  padding: 10px 10px 0px 10px;
+  width: 49%;
+}
+
+.current {
+    display: flex;
+    justify-content: space-around;
+}
+
+.current .temp {
+  font-size: 3em;
+  margin: 10px auto;
+}
+
+.hourly {
+  padding:20px 0;
+}
+
+.hours {
+  display:flex;
+  justify-content: space-between;
+}
+
+.daily h3, .hourly h3 {
+  font-size:1.5em;
+  font-weight:bold;
+  border-bottom:1px solid #222;
+  padding-bottom:20px;
+}
+
+.day {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  border-bottom: 1px solid #222;
+  padding:20px 0;
+}
+
+.day > * {
+  width:15%;
+}
+
+.days .day:last-child {
+    border-bottom: none;
+}
+
+.icon {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url(weather_icons.png);
+  background-size: 1200%;
+  background-repeat:no-repeat;
+}
+
+.icon p {
+  padding-top:42px;
+}
+
+.weather-clear-day {
+  background-position: 3px 3px;
+}
+
+.weather-clear-night {
+  background-position:calc(100% + -5px) 0;
+}
+
+.weather-partly-cloudy-day {
+  background-position: -109px 3px;
+}
+
+.weather-partly-cloudy-night {
+  background-position: 3px -60px;
+}
+
+.weather-cloudy {
+
+}
+
+.weather-rain {
+  background-position: 3px -110px;
+}
+
+.weather-fog {
+
+}
+
+.weather-snow {
+  background-position:-221px -109px;
 }
