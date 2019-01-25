@@ -110,6 +110,8 @@ nav a:hover {
   border: 2px solid #222;
   padding: 10px 10px 0px 10px;
   width: 49%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .current {
@@ -117,9 +119,15 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.current .temp {
+.current h3, .details h3 {
   font-size: 3em;
   margin: 10px auto;
+}
+
+.details .icon {
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
 }
 
 .hourly {
